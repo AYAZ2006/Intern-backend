@@ -50,35 +50,39 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-### 🗂️ Folder Structure
+## 🗂️ Project Folder Structure
 
+```bash
 employee_project/
 │
-├── employee_project/ # Main Django project folder
-│ ├── init.py
-│ ├── settings.py # Project settings
-│ ├── urls.py # Root URL config
-│ └── wsgi.py / asgi.py
+├── employee_project/                # Main Django project folder
+│   ├── __init__.py
+│   ├── settings.py                  # Project settings
+│   ├── urls.py                      # Root URL config
+│   └── wsgi.py / asgi.py
 │
-├── employees/ # Employee app
-│ ├── models.py # Employee & Department models
-│ ├── serializers.py # DRF serializers
-│ ├── views.py # API views
-│ ├── urls.py # App-specific URLs
-│ ├── admin.py # Admin config
-│ └── management/commands/
-│ └── seed_data.py # Faker seed script
+├── employees/                       # Employee app
+│   ├── models.py                    # Employee & Department models
+│   ├── serializers.py               # DRF serializers
+│   ├── views.py                     # API views
+│   ├── urls.py                      # App-specific URLs
+│   ├── admin.py                     # Admin config
+│   └── management/
+│       └── commands/
+│           └── seed_data.py         # Faker seed script
 │
-├── attendance/ # Attendance app
-│ ├── models.py, views.py, ...
+├── attendance/                      # Attendance app
+│   ├── models.py, views.py, ...
 │
-├── performance/ # Performance app
-│ ├── models.py, views.py, ...
+├── performance/                     # Performance app
+│   ├── models.py, views.py, ...
 │
-├── departments/ # Departments app (if separate)
-│ ├── models.py, views.py, ...
+├── departments/                     # Departments app (if separate)
+│   ├── models.py, views.py, ...
 │
-├── db.sqlite3 / postgres # Local DB (use PostgreSQL in production)
-├── manage.py # Django CLI utility
-├── requirements.txt # Project dependencies
-└── README.md # Project documentation
+├── db.sqlite3 / postgres            # Local DB (use PostgreSQL in production)
+├── manage.py                        # Django CLI utility
+├── requirements.txt                 # Project dependencies
+└── README.md                        # Project documentation
+```
+
