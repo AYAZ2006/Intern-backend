@@ -1,4 +1,4 @@
-# 🧑‍💼 Employee Management API
+#  Employee Management API
 
 A Django-based backend system to manage **Employees, Departments, Attendance**, and **Performance Reviews**. Built with **Django REST Framework**, **PostgreSQL**, and **Faker**.
 
@@ -49,3 +49,36 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
+
+### 🗂️ Folder Structure
+
+employee_project/
+│
+├── employee_project/ # Main Django project folder
+│ ├── init.py
+│ ├── settings.py # Project settings
+│ ├── urls.py # Root URL config
+│ └── wsgi.py / asgi.py
+│
+├── employees/ # Employee app
+│ ├── models.py # Employee & Department models
+│ ├── serializers.py # DRF serializers
+│ ├── views.py # API views
+│ ├── urls.py # App-specific URLs
+│ ├── admin.py # Admin config
+│ └── management/commands/
+│ └── seed_data.py # Faker seed script
+│
+├── attendance/ # Attendance app
+│ ├── models.py, views.py, ...
+│
+├── performance/ # Performance app
+│ ├── models.py, views.py, ...
+│
+├── departments/ # Departments app (if separate)
+│ ├── models.py, views.py, ...
+│
+├── db.sqlite3 / postgres # Local DB (use PostgreSQL in production)
+├── manage.py # Django CLI utility
+├── requirements.txt # Project dependencies
+└── README.md # Project documentation
