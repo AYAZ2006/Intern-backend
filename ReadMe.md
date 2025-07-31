@@ -29,3 +29,23 @@ venv\Scripts\activate
 
 # macOS/Linux
 source venv/bin/activate
+```
+### 2. Clone the Repository
+```bash
+git clone https://github.com/yourusername/employee_project.git
+cd employee_project
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4. Run Migrations
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+### 6. Run the Server
+```bash
+python manage.py runserver
+```
