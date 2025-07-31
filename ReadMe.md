@@ -32,7 +32,7 @@ source venv/bin/activate
 ```
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/employee_project.git
+git clone https://github.com/AYAZ2006/Intern-backend.git
 cd employee_project
 ```
 
